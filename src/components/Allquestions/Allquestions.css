@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+.container {
+     display: flex;
+     justify-content: center;
+}
+
+.house {
+     display: flex;
+     justify-content: end;
+     padding-right: 50px;
+     padding-top: 30px;
+}
+
+.fa-solid {
+     font-size: 23px;
+     color: rgba(41, 50, 100, 1);
+     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+     position:absolute;
+}
+.fa-solid:hover {
+     transition: all 0.3s linear;
+     font-size: 25px;
+     /* transform: translateX(5px);
+      transform: translateY(5px) */
+}
+
+.questionList-container {
+     /* width: 700px; */
+     display: flex;
+     flex-direction: column;
+}
+
+.btn-check-answers-disabled {
+     align-self: center;
+     opacity: 50%;
+     cursor: not-allowed;
+     padding: 10px 30px;
+     margin: 10px;
+     text-decoration: none;
+     text-align: center;
+     border-radius: 11px;
+     border: none;
+     /* border: 1px solid rgba(77, 91, 158, 1); */
+     background-color: rgba(77, 91, 158, 1);
+     font-weight: 200;
+     font-size: 16px;
+     font-family: Karla;
+     transition: all 0.35s;
+     background: rgba(77, 91, 158, 1);
+     color: white;
+}
+.btn-check-answers {
+     align-self: center;
+     cursor: pointer;
+     padding: 10px 30px;
+     margin: 10px;
+     text-decoration: none;
+     text-align: center;
+     border-radius: 11px;
+     border: none;
+     /* border: 1px solid rgba(77, 91, 158, 1); */
+     background-color: rgba(77, 91, 158, 1);
+     font-weight: 200;
+     font-size: 16px;
+     font-family: Karla;
+     transition: all 0.35s;
+     background: rgba(77, 91, 158, 1);
+     color: white;
+}
+
+.question-text {
+     font-family: Karla;
+     color: rgba(41, 50, 100, 1);
+}
+
+.btn-check-answers-disabled:active {
+     box-shadow: none;
+}
+
+.bottom-container {
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.correct-answers-text {
+     font-family: "Inter", sans-serif;
+     font-weight: 700;
+     text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+     .questionList-container {
+          width: 80vw;
+          margin: 4em auto 2em auto;
+     }
+}
+
+@media screen and (max-width: 500px) {
+     .questionList-container {
+          width: 90vw;
+     }
+
+     .correct-answers-text {
+          font-size: 1em;
+          margin-right: 1em;
+     }
+}

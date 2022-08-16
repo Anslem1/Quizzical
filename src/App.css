@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+* {
+     margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+     display: flex;
+     height: 100vh;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: rgba(245, 247, 251, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main h1 {
+     font-family: inter, sans-serif;
+     column-gap: 10px;
+     color: rgba(77, 91, 158, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main p {
+     font-family: Karla;
+     font-weight: 500;
+     font-size: 18px;
+     color: rgba(41, 50, 100, 1);
+     margin: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.wrapper {
+     transform: translate(0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.startBtn {
+   
+     padding: 10px 30px;
+     margin: 10px;
+     text-decoration: none;
+     text-align: center;
+     border-radius: 15px;
+     border: none;
+     /* border: 1px solid rgba(77, 91, 158, 1); */
+     background-color: rgba(77, 91, 158, 1);
+     font-weight: 500;
+     font-size: 16px;
+     font-family: inter;
+     transition: all 0.35s;
+     background: rgba(77, 91, 158, 1);
+     color: white;
+}
+
+
+.button-container {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     margin: 10px;
+}
+
+.button-container h1 {
+     font-family: Karla, sans-serif;
+     font-weight: 600;
+     color: rgba(77, 91, 158, 1);
+}
+
+.button-container button {
+     background: rgba(77, 91, 158, 1);
+     border-radius: 10px;
+     padding: 5px 15px;
+     border: none;
+     color: white;
+}
+
+.select-container label {
+     font-weight: 600;
+     font-family: Karla, sans-serif;
+     color: rgba(41, 50, 100, 1);
+}
+
+.select-container select {
+     box-shadow: 1px 1px 3px -1px;
+     width: 100%;
+     border-radius: 7px;
+     padding: 10px;
+     margin: 10px 1px;
+     border: none;
+     box-shadow: 1px;
+     outline: none;
+}
+
+.apierror{
+   text-align: center;
+   font-size: medium;
+   margin: 10px;
+   color: #B00020;
+   font-family: Karla;
+   font-weight: 300;
+}
+
+option {
+     color: rgba(41, 50, 100, 1);
+     font-weight: 500;
+     font-family: Inter;
+}
+
+.topImg {
+     position: absolute;
+     right: 0;
+     width: 15vw;
+}
+
+.bottomImg {
+     position: absolute;
+     width: 15vw;
+     bottom: 0;
+}
+
+.chidiebube{
+ position: relative;
+ top: 15%;
+ font-family: Karla;
+ font-weight: 500;
+ text-decoration: overline;
+    color: rgba(77, 91, 158, 1);
+
 }
