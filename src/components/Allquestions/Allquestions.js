@@ -40,7 +40,7 @@ const Allquestions = ({ playerChoice, startGame, handleApiError }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  console.log(questionsArray)
+
 
   useEffect(() => {
     if (questionsArray.length !== 0 && allQuestionsAnswered) {
